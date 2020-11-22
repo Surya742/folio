@@ -34,6 +34,7 @@ export default function() {
       }, defaultProps)
   );
 
+
   /* About Section */
   ScrollReveal().reveal('.about-wrapper__image', 
     assignProps(

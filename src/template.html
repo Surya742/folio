@@ -1,293 +1,444 @@
-<!--
-  Hello!
-  -
-  Simplefolio is a clean and responsive portfolio template for Developers!
-  Created by Jacobo Martinez.
-  -
-  Github Repo: https://github.com/cobidev/simplefolio/
-  Readme: https://github.com/cobidev/simplefolio/README.md
-  -
-  For business & inquires, contact me -> jacobojavier98@gmail.com
--->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Put here your site title -->
-    <title>[Your name here] | Developer</title>
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="[username], [name], skill" />
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="[Your name here] | Developer" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="shortcut icon" type="image/png" href="./assets/favicon.png" />
 
-    <!-- Required librarys -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script>
-      ScrollReveal({ reset: false });
-    </script>
+  <title>Surya.me - Exuberant!</title>
+  <meta name="keywords" content="javascript, Surya Kumar Sahani , HTML , CSS" />
+  <meta name="description" content="Surya Kumar Sahani | Learning/Develpoing" />
 
-    <!-- Remove this script once you setup your custom portfolio -->
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-  </head>
+  <!-- Required librarys -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- <link rel="stylesheet" href="./style/index.css" /> -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: false });
+  </script>
+  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
+</head>
 
-  <!-- Follow the HTML instructions to create your stunning portfolio website -->
-  <body>
-    <div id="top"></div>
+<body>
+  <div id="top"></div>
 
-    <!-- **** Hero Section **** -->
-    <div id="hero" class="jumbotron">
-      <div class="container">
-        <h1 class="hero-title" class="load-hidden">
-          Hi, my name is <span class="text-color-main">Your Name</span>
-          <br />
-          I'm the Unknown Developer.
-        </h1>
-        <p class="hero-cta" class="load-hidden">
-          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
-        </p>
+  <!-- **** Hero Section **** -->
+  <div id="hero" class="jumbotron">
+    <div class="container">
+      <h1 class="hero-title" class="load-hidden">
+        Hola! I am <span class="text-color-main">Surya, a "code enthusiast" </span>
+        <br />
+        Thanks for stopping by.
+      </h1>
+      <p class="hero-cta" class="load-hidden">
+        <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+      </p>
+      <!-- <audio src="./assets/Sub_Urban-Cradles.mp3"></audio>
+      <button id="button">
+        <i class="fas fa-volume-up"></i>
+      </button> -->
+    </div>
+  </div>
+  <!-- /END Hero Section -->
+
+  <!-- <audio src="./assets/Sub_Urban-Cradles.mp3"></audio>
+  <button id="button">
+    <i class="fas fa-volume-up"></i>
+  </button> -->
+
+  <!-- **** About Section **** -->
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">
+        About me
+      </h2>
+      <div class="row about-wrapper">
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__image">
+            <img class="img-fluid rounded shadow-lg" height="auto" width="300px" src="./assets/profile.jpg"
+              alt="Profile Image" />
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+          <div class="about-wrapper__info">
+            <p class="about-wrapper__info-text">
+              I am a CSE student@DTU and enthusiastic about frontend and backend
+              development , always keep finding
+              oppertunities to increase my skills in technologies, pretend to be a developer, Why don't you say hi?
+
+            </p>
+            <p class="about-wrapper__info-text">
+              Feel free to contact me any time!
+            </p>
+            <!-- <span class="d-flex mt-3">
+              <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
+                View Resume
+              </a>
+            </span> -->
+          </div>
+        </div>
       </div>
     </div>
-    <!-- /END Hero Section -->
+  </section>
+  <!-- /END About Section -->
 
-    <!-- **** About Section **** -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">
-          About me
+  <!-- **** Projects Section **** -->
+  <section id="projects">
+    <div class="container">
+      <div class="project-wrapper">
+        <h2 class="section-title dark-blue-text">
+          Projects
         </h2>
-        <div class="row about-wrapper">
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__image">
-              <img
-                class="img-fluid rounded shadow-lg"
-                height="auto"
-                width="300px"
-                src="./assets/profile.jpg"
-                alt="Profile Image"
-              />
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">FACE DETECTION WEB APP</h3>
+              <div>
+                <p class="mb-4">
+                  This is a face detection web application. Build with the help of
+                  Clarifai's Face Detection Application programming interface and React. This app can detect
+                  the human faces in the image uploaded by user via URL. You can try it but this application
+                  is still under deveploment phase so lacks some functionalities even so fullfill the main aim for which
+                  this project is created.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://surya742.github.io/FaceRecognition/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Surya742/FaceRecognition">
+                Source Code
+              </a>
             </div>
           </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="about-wrapper__info">
-              <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
-              </p>
-              <p class="about-wrapper__info-text">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Excepturi neque, ipsa animi maiores repellendu distinctioaperiam
-                earum dolor voluptatum consequatur blanditiis inventore debitis
-                fuga numquam voluptate architecto itaque molestiae.
-              </p>
-              <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="#!">
-                  View Resume
-                </a>
-              </span>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/FaceRecognition/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project2.png" />
+                </div>
+              </a>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
+        <!-- /END Project -->
 
-    <!-- **** Projects Section **** -->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">
-            Projects
-          </h2>
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">HANGMAN GAME</h3>
+              <div>
+                <p class="mb-4">
+                  Guess the word within 6 attemts, Otherwise you will be get hanged :) . Good Luck! .
+                  There is a huge database of words , more than 1.5K words from which words is randomly selected ,
+                  you have to guess it right.
+                </p>
               </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://surya742.github.io/hangman-game/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Surya742/hangman-game">
+                Source Code
+              </a>
             </div>
           </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/hangman-game/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/hang.png" />
                 </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
+              </a>
             </div>
           </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Project Title</h3>
-                <div>
-                  <p class="mb-4">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Excepturi neque, ipsa animi maiores repellendus distinctio
-                    aperiam earum dolor voluptatum consequatur blanditiis
-                    inventore debitis fuga numquam voluptate ex architecto
-                    itaque molestiae.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="#!">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="#!">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="#!" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/project.jpg" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
         </div>
-      </div>
-    </section>
-    <!-- /END Projects Section -->
+        <!-- /END Project -->
 
-    <!-- **** Contact Section **** -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">
-          Contact
-        </h2>
-        <div class="contact-wrapper">
-          <p class="contact-wrapper__text">
-            [Put your call to action here]
-          </p>
-          <a
-            target="_blank"
-            class="cta-btn cta-btn--resume"
-            href="mailto:example@email.com"
-            >Call to Action</a
-          >
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">ROBOT FRIENDS</h3>
+              <div>
+                <p class="mb-4">
+                  Robot Friends is a fun game type of application where I can save my collection of Robo
+                  cards. Mainly the searching functionality is shown in this project.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://surya742.github.io/robofriends/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Surya742/robofriends">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/robofriends/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project3.png" />
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
-    <!-- /END Contact Section -->
+        <!-- /END Project -->
 
-    <!-- **** Footer Section **** -->
-    <footer class="footer navbar-static-bottom">
-      <div class="container">
-        <a href="#top" class="back-to-top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">BIRTHDAY WISHING</h3>
+              <div>
+                <p class="mb-4">
+                  This is a very nice way of wishing anyone on their birthdays. I used a random name for wishing
+                  happy birthday in this project which is "Bonu Rustamova" just to use a unique name.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero"
+                href="https://surya742.github.io/BONU_RUSTAMOVA-16th_Birthday/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/Surya742/BONU_RUSTAMOVA-16th_Birthday">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/BONU_RUSTAMOVA-16th_Birthday/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project4.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">DAILY JOURNAL</h3>
+              <div>
+                <p class="mb-4">
+                  This is a Daily Journal application which can be used as Blog website as well as personal journal,
+                  User just have to add their blog/journal in it and it will get displayed on the home page. Although
+                  this functionality is hidden, but if you want to compose something in it then just add "/compose" at
+                  the end of the website's URL which will leads you to the compose page.
+                  (NOTE : Just be cautious while posting anything in it, as I didn't provided any delete option which
+                  means no one have access to delete any post except me. :)
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://floating-fjord-31035.herokuapp.com/">
+                See Live
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://floating-fjord-31035.herokuapp.com/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project5.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">TO-DO APP</h3>
+              <div>
+                <p class="mb-4">
+                  This is a To-DO application which helps user to keep track of the their to-do works, like daily
+                  routine tasks or grocery list, basically anything they want.
+
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://glacial-scrubland-31476.herokuapp.com/">
+                See Live
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://glacial-scrubland-31476.herokuapp.com/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project6.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">BACKGROUND GRADIENT GENERATOR</h3>
+              <div>
+                <p class="mb-4">
+                  This background gradient generator is created to ease down the work of a developer while selecting
+                  which gradient will suits better for their projects, this application returns the RGB value along with
+                  proper attribute of colors after selecting. This whole generated output can be easily pasted in the
+                  code to get the desired result.
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero"
+                href="https://surya742.github.io/background-gradient-generator/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main"
+                href="https://github.com/Surya742/background-gradient-generator">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/background-gradient-generator/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project7.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">PROGATE WEBATHON PROJECT</h3>
+              <div>
+                <p class="mb-4">
+                  This project was created as a part of a Webathon, It really contains some amazing websites, one should
+                  go through it. And yes don't forget to enjoy creating your own drum beats at the end :)
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://surya742.github.io/Progate_project/">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Surya742/Progate_project">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/Progate_project/" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project8.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+        <!-- Each .row is a project -->
+        <div class="row">
+          <div class="col-lg-4 col-sm-12">
+            <div class="project-wrapper__text">
+              <h3 class="project-wrapper__text-title">MY FIRST WEBSITE</h3>
+              <div>
+                <p class="mb-4">
+                  Here it comes!! , this was my first webpage I have made back in 2019 when I was just learning about
+                  this field. I only had knowledge about HTML,CSS and javascript at that time and just filled this page
+                  with all the functionality I had learnt without caring about design and alignment. Didn't changed
+                  anything in it after that because it is like a symbol of my first website :).
+                </p>
+              </div>
+              <a target="_blank" class="cta-btn cta-btn--hero" href="https://surya742.github.io/MY_firstPage/#">
+                See Live
+              </a>
+              <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Surya742/MY_firstPage">
+                Source Code
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-8 col-sm-12">
+            <div class="project-wrapper__image">
+              <a href="https://surya742.github.io/MY_firstPage/#" target="_blank">
+                <div data-tilt class="thumbnail rounded">
+                  <img class="img-fluid" src="./assets/project1.png" />
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /END Project -->
+
+
+      </div>
+    </div>
+  </section>
+  <!-- /END Projects Section -->
+
+  <!-- **** Contact Section **** -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">
+        Contact
+      </h2>
+      <div class="contact-wrapper">
+        <p class="contact-wrapper__text">
+          [Put your call to action here]
+        </p>
+        <a target="_blank" class="cta-btn cta-btn--resume" href="mailto:suryakumarsahani.09@gmail.com">Call to
+          Action</a>
+      </div>
+    </div>
+  </section>
+  <!-- /END Contact Section -->
+
+  <!-- **** Footer Section **** -->
+  <footer class="footer navbar-static-bottom">
+    <div class="container">
+      <a href="#top" class="back-to-top">
+        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      </a>
+      <div class="social-links">
+        <a href="https://twitter.com/Surya_s742" target="_blank">
+          <i class="fa fa-twitter fa-inverse"></i>
         </a>
-        <div class="social-links">
-          <a href="#!" target="_blank">
-            <i class="fa fa-twitter fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-codepen fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-linkedin fa-inverse"></i>
-          </a>
-          <a href="#!" target="_blank">
-            <i class="fa fa-github fa-inverse"></i>
-          </a>
-        </div>
-
-        <hr />
-
-        <!-- If you give me some credit, will be huge for me :) -->
-        <p class="footer__text">
-          © 2020 - Template developed by <a href="https://github.com/cobidev" target="_blank">Jacobo Martínez</a>
-          </a>
-        </p>
-
-        <!-- Remove this paragraph once you setup your custom portfolio -->
-        <p class="mt-3 pt-3">
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork ntkme/github-buttons on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/cobidev/simplefolio"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star cobidev/simplefolio on GitHub"
-            >Star</a
-          >
-        </p>
+        <a href="https://www.instagram.com/surya_s.742/" target="_blank">
+          <i class="fa fa-instagram fa-inverse"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/surya-kumar-sahani-25911b1a3" target="_blank">
+          <i class="fa fa-linkedin fa-inverse"></i>
+        </a>
+        <a href="https://github.com/Surya742" target="_blank">
+          <i class="fa fa-github fa-inverse"></i>
+        </a>
       </div>
-    </footer>
-    <!-- /END Footer Section -->
-  </body>
+
+      <hr />
+      <p class="footer__text">
+        ©
+        <script>document.write(new Date().getFullYear())</script> - Made with 💖 <a href="https://github.com/cobidev"
+          target="_blank">Surya Kumar Sahani</a>
+        </a>
+      </p>
+    </div>
+  </footer>
+  <!-- <script src="https://cdn.rawgit.com/progers/pathseg/master/pathseg.js"></script> -->
+  <!-- <script src="audioIndex.js"></script> -->
+
+  <!-- /END Footer Section -->
+</body>
+
 </html>
